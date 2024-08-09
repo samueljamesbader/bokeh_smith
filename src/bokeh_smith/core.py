@@ -37,7 +37,7 @@ def smith_chart(
     p.varea(x=(x - .5) * 1.01 + .5, y1=np.sqrt(1 - x ** 2) + .01, y2=2, fill_color='white')
 
     # Put an x in the center
-    p.x(0, 0, line_color='grey')
+    p.scatter(0, 0, line_color='grey', marker='x')
 
     # Turn off axis and cartesian grid
     p.xaxis.visible = False
